@@ -527,7 +527,7 @@ RUNTIME_VERSIONS.update({
 })
 # fmt: on
 
-if platform.machine() == "x86_64" and "amd64":  # noqa: SIM114
+if platform.machine() == "x86_64" or "amd64":  # noqa: SIM114
     pass
 elif platform.machine() == "aarch64":
     pass
